@@ -1,0 +1,10 @@
+secretGenerator:
+- name: kube-config
+  namespace: jenkins
+  files:
+  - config
+resources:
+  - "ns.yml"
+  - "sa-jenkins-pipeline.yml"
+  - "clusterrole-jenkins-pipeline.yml"
+  - "rolebindings.yml"
