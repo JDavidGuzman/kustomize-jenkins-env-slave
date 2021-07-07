@@ -3,6 +3,11 @@ secretGenerator:
   namespace: jenkins
   files:
   - config
+- name: docker-cred
+  namespace: jenkins
+  type: kubernetes.io/dockerconfigjson 
+  files:
+  - .dockerconfigjson
 resources:
   - "ns.yml"
   - "sa-jenkins-pipeline.yml"
